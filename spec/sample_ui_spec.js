@@ -15,12 +15,12 @@ describe('Partial sample', function() {
 
   afterEach(function() {
     // If you need to reset some values after each testing
-    // you can do it here. 
+    // you can do it here.
   });
 
   describe("displays text", function() {
 
-    it("when button is clicked", function() {
+    xit("when button is clicked", function() {
       $('#text').val('Some random text...');
       $('#click_me').trigger('click');
       expect($('#display_message').text()).toBe('Some random text...');
