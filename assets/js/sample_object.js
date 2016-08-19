@@ -1,12 +1,12 @@
-function GetWeather(position) {
+function GetWeather(pos) {
     $('button').on('click', function () {
-      getLocation(position);
+      getLocation(pos);
     });
 };
 
-function getLocation(position) {
+function getLocation(pos) {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
+    navigator.geolocation.getCurrentPosition(function(pos) {
       showPosition(position.coords.latitude, position.coords.longitude);
     });
   } else {
