@@ -1,17 +1,14 @@
-describe("SampleObject", function() {
-  var subject;
+describe("GetWeather", function() {
+  var list;
 
   beforeEach(function() {
-    subject = new SampleObject();
+    position = {lat: 57.71, lon: 11.97};
+    list = new GetWeather(position);
+    expectedUrl = 'http://api.openweathermap.org/data/2.5/weather?lat=57.71&lon=11.97&APPID=072af5559931a9dc9c97e0a217a48f07';
   });
 
-  it("#myFirstFunction set a Yay! as attribute", function() {
-    subject.myFirstFunction();
-    expect(subject.someAttribyte).toEqual('Yay!');
+  it("We get a location", function() {
+    expect(list.getLocation(location)).toEqual(expectedUrl);
   });
 
-  it("#mySecondFunction adds two numbers together", function() {
-
-    expect(subject.mySecondFunction(10, 5)).toEqual(15);
-  });
 });
