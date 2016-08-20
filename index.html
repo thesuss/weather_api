@@ -3,6 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="assets/css/style.css" rel="stylesheet">
   <title>Get weather for where the browser is</title>
   <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
   <script src="assets/js/app.js"></script>
@@ -15,10 +16,12 @@
   <div id="wrap">
     <h1>Get weather for where the browser is</h1>
     <div>
-      Location: <span id="place"></span><br>
-      Info: <span id="info"></span><br>
-      Description: <span id="description"></span><br>
-      Temperature: <span id="temperature"></span><br>
+      <table>
+      <tr><td>Location:</td> <td><span id="place"></span></td></tr>
+      <tr><td>Info:</td> <td><span id="info"></span></td></tr>
+      <tr><td>Description:</td> <td><span id="description"></span></td></tr>
+      <tr><td>Temperature:</td> <td><span id="temperature"></span></td></tr>
+</table>
     </div>
   </div>
 

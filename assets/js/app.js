@@ -3,7 +3,7 @@ var onReadyEvents = function(){
 
   var options = {
     enableHighAccuracy: true,
-    timeout: 5000,
+    timeout: 4000,
     maximumAge: 0
   };
 

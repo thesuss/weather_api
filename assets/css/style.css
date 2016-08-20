@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Aladin);
+
+h1, div {
+  font-family: "Aladin", Georgia, Serif;
+}
+
+body {
+  background:#fafafa;
+  font-size:20px;
+  line-height: 26px;
+}
+
+#wrap {
+  max-width:650px;
+  margin: 0px auto;
+}
+
+
+#place {}
+#info {color:blue;}
+#description {color:green;}
+#temperature {color:red}
